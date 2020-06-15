@@ -38,11 +38,11 @@ void loop() {
 /****CH1,GAIN1,25Hz,bipolar*****
  ad.setSetup(1,1,25,1);
  data = ad.read_bipolar();
- // long data = 0...65535  = 0...+5 V
+ // long data = -32768...32767 = -2.5...+2.5 V
  */
 
 /****CH1,GAIN1,25Hz,unipolar*****
  ad.setSetup(1,1,25,0);
  data = ad.read_unipolar();
- // long data = -32768...32767 = -2.5...+2.5 V
+ // long data = 0...65535  = 0...+5 V
  */
